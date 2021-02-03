@@ -20,8 +20,8 @@ const useStyles = makeStyles(() => ({
     textAlign: "center",
   },
   SearchBar: {
-   // margin: "24px 0 28px 360px",
-   margin:"auto"
+ //   margin: "24px 50px 28px 36px",
+  // margin:"auto"
   },
 }));
 
@@ -52,16 +52,24 @@ const Home = () => {
         <>
           <HomeStart />
           <Grid container direction="column">
-            <Grid item>
+           <Grid item container>
+            <Grid item xs={false} sm={3} md={3}/>
+            <Grid item xs={12} sm={6}>
               <Typography variant="h5" className={classes.center} noWrap>
                 Your favourite food, delivered with Tiffiny&nbsp;&nbsp;
                 <span style={{ fontSize: 40 }}>🍽</span>
               </Typography>
             </Grid>
-            <Grid item className={classes.SearchBar}>
+             <Grid item xs={false} sm={3} />
+</Grid>
+ <Grid item container>
+                         <Grid item xs={false} sm={1} />
+
+            <Grid item className={classes.SearchBar} xs={12} sm={10}>
               <SearchBar page="home" action={setLocationStatus} />
             </Grid>
-            
+                        <Grid item xs={false} sm={1} />
+</Grid>
             <Grid item container>
               <Grid item xs={false} sm={1} />
               <Grid item xs={12} sm={10}>

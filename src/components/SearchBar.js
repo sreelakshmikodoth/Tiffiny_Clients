@@ -24,7 +24,9 @@ const useStyles = makeStyles((theme) => ({
     padding: "2px 4px",
     display: "flex",
     alignItems: "center",
-    width: 860,
+        position: "relative",
+  //  width: 860,
+  width: "100%",
   },
   rootItems: {
     padding: "2px 4px",
@@ -40,11 +42,11 @@ const useStyles = makeStyles((theme) => ({
   },
   results: {
     position: "absolute",
-    bottom: -176,
-    left: "18%",
+    bottom: -10,
+    left: "0",
     zIndex: 999,
-    width: 860,
-    height: "23%",
+    width: "100%",
+    height: "20%",
     
   },
   iconButton: {
