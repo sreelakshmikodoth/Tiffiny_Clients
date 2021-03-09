@@ -48,7 +48,7 @@ export default function CartItem(props) {
   } = props;
  // const imageUrlSplit = imageUrl[0].split("\\");
  // const finalImageUrl = `${process.env.REACT_APP_SERVER_URL}/${imageUrlSplit[0]}/${imageUrlSplit[1]}`;
-const finalImageUrl = imageUrl.img;
+const finalImageUrl = imageUrl && imageUrl[0].img;
   const dispatch = useDispatch();
 
   const handleAddItem = () => {
